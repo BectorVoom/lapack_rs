@@ -1,0 +1,10 @@
+[package]
+name = "openblas_ref"
+version = "0.0.0"
+edition = "2024"
+publish = false
+description = "Test-only FFI to scipy's bundled OpenBLAS 0.3.30 (the OpenBLAS bit-exact oracle, a third track)"
+links = "openblas_ref"
+build = "build.rs"
+
+[dependencies]

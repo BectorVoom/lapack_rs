@@ -1,0 +1,11 @@
+[package]
+name = "xtask"
+version = "0.0.0"
+edition = "2024"
+publish = false
+
+[[bin]]
+name = "build-ref-lapack"
+path = "src/bin/build_ref_lapack.rs"
+
+[dependencies]

@@ -1,0 +1,8 @@
+# Persist compiled kernels (PTX / HIP binaries) between processes: the CubeCL
+# manual measured 24.5 s -> 2.5 s on a 143-kernel ROCm suite, and lapack_rs
+# pays 6-16 s of NVRTC compilation on a cold CUDA run. Safe only because
+# build.rs clears these directories whenever a `#[cube]` source changes -- the
+# cache key does not cover the kernel body (manual 15 §2.5). The CubeCL CPU
+# runtime has no on-disk cache and ignores this.
+[compilation]
+cache = "target"

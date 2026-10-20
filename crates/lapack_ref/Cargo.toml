@@ -1,0 +1,10 @@
+[package]
+name = "lapack_ref"
+version = "0.0.0"
+edition = "2024"
+publish = false
+description = "Test-only FFI to Reference-LAPACK 3.12.1 + reference BLAS (the bit-exact oracle)"
+links = "lapack_ref"
+build = "build.rs"
+
+[dependencies]

@@ -1,0 +1,11 @@
+[package]
+name = "cint_ref"
+version = "0.0.0"
+edition = "2024"
+publish = false
+description = "Test-only FFI to libcint 6.1.3's vendored tridiagonal eigensolver (eigh.c's #else branch), the oracle for Path C"
+
+[dependencies]
+
+[build-dependencies]
+cc = "1"

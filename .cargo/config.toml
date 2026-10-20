@@ -1,0 +1,3 @@
+[alias]
+# `cargo xtask build-ref-lapack` runs `xtask/src/bin/build_ref_lapack.rs`.
+xtask = "run --release --package xtask --bin"
